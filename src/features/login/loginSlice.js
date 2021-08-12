@@ -71,8 +71,8 @@ const loginSlice = createSlice({
 });
 
 export const { editUsername, editPassword, toggleMode } = loginSlice.actions;
-export const selectAuthen = (state) => state.loginSlice.authen;
-export const selectIsLoginView = (state) => state.loginSlice.isLoginView;
-export const selectProfile = (state) => state.loginSlice.profile;
+export const selectAuthen = (state) => state.login.authen;
+export const selectIsLoginView = (state) => state.login.isLoginView;
+export const selectProfile = (state) => state.login.profile;
 
 export default loginSlice.reducer;
