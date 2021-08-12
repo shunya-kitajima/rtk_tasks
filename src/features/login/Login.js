@@ -65,13 +65,13 @@ const Login = () => {
           >
             {isLoginView ? "Login" : "Create"}
           </Button>
-          <span
-            className={styles.switchText}
-            onClick={() => dispatch(toggleMode())}
-          >
-            {isLoginView ? "Create Account ?" : "Back to Login"}
-          </span>
         </div>
+        <span
+          className={styles.switchText}
+          onClick={() => dispatch(toggleMode())}
+        >
+          {isLoginView ? "Create Account ?" : "Back to Login"}
+        </span>
       </div>
     </div>
   );
